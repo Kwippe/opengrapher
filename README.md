@@ -1,7 +1,7 @@
 opengrapher
 ===========
 
-A Node module to parse opengraphs of a webpage
+A Node module to parse Twitter metadata from a webpage.
 
 [![Build Status](https://travis-ci.org/z4r/opengrapher.svg?branch=master)](https://travis-ci.org/z4r/opengrapher)
 
@@ -25,14 +25,15 @@ opengrapher.parse('http://ogp.me/', function(err, og) {
 
 __output__:
 ```javascript
-{ 
-  title: 'Open Graph protocol',
-  type: 'website',
-  url: 'http://ogp.me/',
-  image: 'http://ogp.me/logo.png',
-  'image:type': 'image/png',
-  'image:width': '300',
-  'image:height': '300',
-  description: 'The Open Graph protocol enables any web page to become a rich object in a social graph.'
-}
+{ card: 'photo',
+  title: 'imgur: the simple image sharer',
+  image: 'http://i.imgur.com/mOvs78u.png',
+  'image:width': '550',
+  'image:height': '500',
+  description: 'Mr. Nervous!',
+  site: '@imgur',
+  domain: 'imgur.com',
+  'app:id:iphone': '639881495',
+  'app:id:ipad': '639881495',
+  'app:id:googleplay': 'com.imgur.mobile' }
 ```
